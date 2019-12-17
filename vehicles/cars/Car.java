@@ -11,7 +11,7 @@ import vehicles.parts.Engine;
 public abstract class Car extends Vehicle{
 
 	//every car must have engine
-	protected Engine engine;
+	private Engine engine;
 	
 	//simple constructor
 	protected Car(int s, Engine e, boolean eco){
@@ -21,6 +21,10 @@ public abstract class Car extends Vehicle{
     	this.engine = e;
    	}
 
+ 	//method allows get engine of car in any context
+   	public Engine getEngine(){
+   		return this.engine;
+   	}
    	//we don't implement go() method because the class is abstract
  }
  

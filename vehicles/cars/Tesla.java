@@ -13,7 +13,7 @@ public class Tesla extends Car{
 	
 	//implementation of Vehicle's go method
 	public void go(){
-   		this.engine.printInfo();
-    	System.out.println("Tesla is going on. Speed: " + this.speed);
+   		getEngine().printInfo();
+    	System.out.println("Tesla is going on. Speed: " + getSpeed());
 	}
 }

@@ -5,9 +5,9 @@ package vehicles;
 //this class is main in our inheritance tree
 public abstract class Vehicle {
 	//every vehicle has some speed and is ecological or not
-	//protected because only childs must have direct access to the fields
-	protected int speed;
-	protected boolean isEco;
+	//fields are private according to encapsulation rules
+	private int speed;
+	private boolean isEco;
 
 	//every vehicle can move
 	//abstract because we don't know how exactly it can move
@@ -19,8 +19,13 @@ public abstract class Vehicle {
 		this.isEco = eco;
  	}
  	
+ 	//method allows get speed of vehicle in any context
+ 	public int getSpeed(){
+ 		return this.speed;
+ 	}
+
  	//check if the vehicle is ecological
  	public boolean isEco(){
-   		return isEco;
+ 		return this.isEco;	
  	}
  }

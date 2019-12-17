@@ -13,7 +13,7 @@ public class Bike extends Vehicle{
     
     //implementation of abstract method of Vehicle
     public void go(){
-    	System.out.println("Bike is being rided. Speed: " + speed);
+    	System.out.println("Bike is being rided. Speed: " + getSpeed());
     }
 
 }

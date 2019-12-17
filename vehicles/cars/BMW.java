@@ -14,7 +14,7 @@ public class BMW extends Car{
    
    	//implementation of Vehicle's go method
 	public void go(){
-		this.engine.printInfo();
-    	System.out.println("BMW is going on. Speed: " + this.speed);
+		getEngine().printInfo();
+    	System.out.println("BMW is going on. Speed: " + getSpeed());
    	}
  }
